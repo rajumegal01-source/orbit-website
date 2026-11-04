@@ -1,10 +1,182 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>ORBIT</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ORBIT | Dashboard</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #080b14;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 8%;
+    border-bottom: 1px solid #20263a;
+}
+
+.logo {
+    font-size: 27px;
+    font-weight: bold;
+    color: #65a5ff;
+    letter-spacing: 3px;
+}
+
+nav a {
+    color: #b9c3d8;
+    text-decoration: none;
+    margin-left: 22px;
+}
+
+.hero {
+    padding: 90px 8%;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 52px;
+    margin-bottom: 20px;
+}
+
+.hero h1 span {
+    color: #65a5ff;
+}
+
+.hero p {
+    color: #aab4c8;
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+.button {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 14px 30px;
+    background: #3478f6;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+.dashboard {
+    padding: 20px 8% 80px;
+}
+
+.dashboard h2 {
+    margin-bottom: 25px;
+    font-size: 26px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: #121a2b;
+    padding: 28px;
+    border: 1px solid #25314b;
+    border-radius: 14px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    border-color: #65a5ff;
+}
+
+.card h3 {
+    color: #65a5ff;
+    margin-bottom: 15px;
+}
+
+.card p {
+    color: #aab4c8;
+    line-height: 1.6;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    border-top: 1px solid #20263a;
+    color: #78849c;
+}
+
+@media(max-width:600px) {
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    nav a {
+        margin-left: 10px;
+        font-size: 13px;
+    }
+}
+</style>
 </head>
+
 <body>
-<h1>Welcome to ORBIT</h1>
-<p>My First Website</p>
+
+<header>
+    <div class="logo">ORBIT</div>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#dashboard">Dashboard</a>
+    </nav>
+</header>
+
+<section class="hero" id="home">
+    <h1>WELCOME TO <span>ORBIT</span></h1>
+    <p>
+        Explore a smarter digital world.<br>
+        Technology, Innovation and Intelligence.
+    </p>
+    <a href="#dashboard" class="button">Explore Dashboard</a>
+</section>
+
+<section class="dashboard" id="dashboard">
+    <h2>My Dashboard</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>01. Technology</h3>
+            <p>Discover modern technology and digital innovation.</p>
+        </div>
+
+        <div class="card">
+            <h3>02. Trading</h3>
+            <p>Explore financial markets and trading knowledge.</p>
+        </div>
+
+        <div class="card">
+            <h3>03. Learning</h3>
+            <p>Learn new skills and improve your knowledge.</p>
+        </div>
+
+        <div class="card">
+            <h3>04. Innovation</h3>
+            <p>Build creative ideas for the future.</p>
+        </div>
+
+    </div>
+</section>
+
+<footer>
+    © 2026 ORBIT. All Rights Reserved.
+</footer>
+
 </body>
 </html>
